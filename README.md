@@ -16,7 +16,7 @@
 
 
 ## 项目参考
-Flarum [https://docs.flarum.org/zh/]： css 参考
+Flarum [https://docs.flarum.org/zh] css 参考
 
 ## 文档地址
 1. 接口文档地址： https://newsapi.org/
