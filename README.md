@@ -6,13 +6,13 @@
 ## 整体考虑 从0->1搭建
 1. 选型 vue cli + axios + day + elementui： demo搭建、减少项目时间，并且有自在的eslint 可以满足规范。
 ## 处理问题
-- axios 封装请求
-- 尝试封装
-- moment 格式化时间
-- elementui 主要是用图片和layout、防止太大用插件做按需引入,暂时不配置script 方式
-- 代码风格 eslint + Prettier + editconfig
-- scss + 全局
-- 配置文件 .env.xxx 这里只放env
+1. axios 封装请求
+2. 尝试封装
+3. moment 格式化时间
+4. elementui 主要是用图片和layout、防止太大用插件做按需引入,暂时不配置script 方式
+5. 代码风格 eslint + Prettier + editconfig
+6. scss + 全局
+7. 配置文件 .env.xxx 这里只放env
 
 
 ## 项目参考
