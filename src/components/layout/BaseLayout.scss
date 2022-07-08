@@ -1,0 +1,13 @@
+.BaseLayout {
+  .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .aside {
+    width: 190px;
+  }
+  .container {
+    width: $b-width;
+  }
+}

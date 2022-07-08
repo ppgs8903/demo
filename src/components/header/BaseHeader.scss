@@ -1,0 +1,32 @@
+.BaseHeader {
+  .header {
+    width: $b-width;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 108px;
+    height: 34px;
+    background: url('~@/assets/img/logo.jpg') no-repeat left center;
+    background-size: contain;
+  }
+  .operator {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .userInfo {
+    margin-left: 10px;
+    span {
+      &:hover {
+        cursor: pointer;
+        color: blue;
+        opacity: .7;
+      }
+    }
+  }
+}
