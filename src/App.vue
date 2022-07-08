@@ -48,6 +48,7 @@ import NewsTab from "@/components/table/NewsTab";
 
 // 查询接口
 import { queryEverything } from "@/services/api/news";
+import moment from "moment";
 // 所有信息
 
 export default {
@@ -70,6 +71,7 @@ export default {
       articlesLike: [],
       // 查询参数
       q: "",
+      sortBy: "publishedAt",
       // page 当前是收藏还是query页面,默认所有页面
       page: MENU_PAGE.all,
       // 配置
@@ -102,10 +104,14 @@ export default {
     },
     // 点击搜索的时候查询
     async search() {
-      let params = {};
+      let params = {
+        sortBy: this.sortBy,
+        from: moment().format("YYYY-MM-DD"),
+      };
       if (this.q !== "") {
         params.q = this.q;
       }
+      // 没有q 的话这个api 是无效的，但是proxy 没办法在vpn下运作，需要nginx配合
       // else {
       //   this.$message("请在搜索后使用");
       //   return;
