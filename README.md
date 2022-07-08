@@ -22,6 +22,7 @@ Flarum [https://docs.flarum.org/zh/]： css 参考
 1. 接口文档地址： https://newsapi.org/
 
 ## 文件结构
+```
 img - 录像之类的
 public - 静态文件位置
 src -
@@ -40,6 +41,7 @@ babel.config.js - 转换代码配置，以及按需加载插件配置
 lint-staged.config.js - 提交时候出发check规则
 vue.config.js - vue cli 下的webpack 配置文件
 yarn.lock - yarn 生成的缓存文件
+```
 
 ## 代码风格
 [vscode 自动格式化](https://www.freesion.com/article/8527264381/)
